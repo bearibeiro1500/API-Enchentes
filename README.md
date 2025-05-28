@@ -1,10 +1,10 @@
 # API-Enchentes GS1 2025
-API RESTful desenvolvida em Java utilizando Spring Boot, que tem como objetivo simular um sistema automatizado de detecção, alerta e contenção de enchentes, com foco em garantir maior segurança para comunidades urbanas.
+API RESTful desenvolvida em Java utilizando Spring Boot, com objetivo de simular um sistema automatizado de detecção, alerta e contenção de enchentes, com foco em garantir uma maior segurança para as comunidades urbanas.
 
 **OBJETIVOS DO PROJETO:
 **
 - Detecta enchentes com base em dados simulados ou fornecidos.
-- Emite alertas para autoridades e/ou moradores em caso de risco.
+- Emite alertas para autoridades e/ou moradores em caso de riscos.
 - Executa estratégias de contenção e resposta para minimizar os impactos das enchentes.
 
 **TECNOLOGIAS UTILIZADAS: 
