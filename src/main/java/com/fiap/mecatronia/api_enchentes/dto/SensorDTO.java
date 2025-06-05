@@ -1,15 +1,9 @@
-package com.fiap.mecatronia.api_enchentes.model;
+package com.fiap.mecatronia.api_enchentes.dto;
 
-import jakarta.persistence.*;
 import java.time.LocalDateTime;
 
-@Entity
-public class Sensor {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+public class SensorDTO {
     private Long id;
-
     private double nivelAgua;
     private String clima;
     private LocalDateTime dataLeitura;
@@ -26,4 +20,3 @@ public class Sensor {
     public LocalDateTime getDataLeitura() { return dataLeitura; }
     public void setDataLeitura(LocalDateTime dataLeitura) { this.dataLeitura = dataLeitura; }
 }
-
