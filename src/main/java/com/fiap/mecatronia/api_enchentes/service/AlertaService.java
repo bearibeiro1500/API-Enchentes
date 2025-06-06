@@ -26,6 +26,7 @@ public class AlertaService {
         Alerta entidade = dtoToEntity(dto);
         entidade.setDataAlerta(LocalDateTime.now());
         entidade = alertaRepository.save(entidade);
+        System.out.println("Alerta salvo com id: " + entidade.getId());
         return entityToDto(entidade);
     }
 

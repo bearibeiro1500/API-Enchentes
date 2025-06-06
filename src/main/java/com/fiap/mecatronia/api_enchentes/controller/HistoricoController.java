@@ -17,13 +17,12 @@ public class HistoricoController {
     private HistoricoService historicoService;
 
     @GetMapping
-    public List<HistoricoDTO> listar() {
+    public List<HistoricoDTO> listarTodos() {
         return historicoService.listarTodos();
     }
 
     @PostMapping
-    public ResponseEntity<HistoricoDTO> registrar(@RequestBody HistoricoDTO dto) {
-        HistoricoDTO salvo = historicoService.registrarAcao(dto);
-        return ResponseEntity.status(HttpStatus.CREATED).body(salvo);
+    public HistoricoDTO registrarAcao(@RequestBody HistoricoDTO dto) {
+        return historicoService.registrarAcao(dto);
     }
 }

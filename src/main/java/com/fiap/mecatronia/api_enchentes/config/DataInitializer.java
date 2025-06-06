@@ -15,12 +15,13 @@ public class DataInitializer implements CommandLineRunner {
     private SensorRepository sensorRepository;
 
     @Override
-    public void run(String... args) {
-        Sensor leitura = new Sensor();
-        leitura.setNivelAgua(1.5);
-        leitura.setClima("Nublado");
-        leitura.setDataLeitura(LocalDateTime.now());
-
-        sensorRepository.save(leitura);
+    public void run(String... args) throws Exception {
+        if(sensorRepository.count() == 0) {
+            Sensor sensor = new Sensor();
+            sensor.setClima("Nublado");
+            sensor.setNivelAgua(2.3);
+            sensor.setDataLeitura(LocalDateTime.now());
+            sensorRepository.save(sensor);
+        }
     }
 }
